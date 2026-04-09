@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+    <div id="hud" style="position:fixed;top:10px;right:10px;color:yellow;font-size:24px;font-family:Arial Black;z-index:100;">
+  <div>❤️ <span id="lives-display">3</span></div>
+  <div>Score: <span id="score-display">0</span></div>
+</div>
+<div id="start-screen">
+  <h1>PAC-MAN 3D</h1>
+  <button onclick="startGame()">PLAY</button>
+</div>
+<div id="death-screen" style="display:none">
+  <h1>GAME OVER</h1>
+  <button onclick="restartGame()">TRY AGAIN</button>
+</div>
+        <script src="three.js"></script>
+        <script src="game.js"></script>
+    </body>
+</html>
